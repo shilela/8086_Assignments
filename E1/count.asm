@@ -8,7 +8,7 @@ NUM    DW    6 ; 控制循环次数（输入字符的数量）
 A      DB   '?'
 B      DB   '?'
 START: MOV   CX,NUM
-	   MOV   DX,0
+       MOV   DX,0
 INPUT: MOV   AH,1
        INT   21H
        CMP   AL,'A'
