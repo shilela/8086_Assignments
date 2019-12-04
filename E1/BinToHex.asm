@@ -23,10 +23,10 @@ ROTATE: MOV      CL,4  ; CL控制循环左移四位
         ADD      AL,07H ; A~E转换为对应的ASCII码
 PRINTIT: MOV      DL,AL
          MOV      AH,2
-		 INT      21H
-		 DEC      CH ; CH递减
-	     JNZ      ROTATE
-		 RET
+         INT      21H
+         DEC      CH ; CH递减
+         JNZ      ROTATE
+         RET
 MAIN    ENDP
 CODE    ENDS
 END    MAIN
